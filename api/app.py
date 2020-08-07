@@ -96,7 +96,7 @@ def exposedToSunMultiple(arr,sun,near):
     extra_len = tanTheta*diffBuild
     exposed += extra_len + abs(first_build[0][1])
     exposed += sec_build[3][0] - sec_build[0][0]
-    exposed = float(exposed)
+    exposed = round(float(exposed),2)
     return exposed
 
 def exposedToSunSingle(arr,sun):
@@ -105,7 +105,7 @@ def exposedToSunSingle(arr,sun):
     
     exposed = abs(first_build[1][1] - first_build[0][1])
     exposed += abs(first_build[3][0]- first_build[0][0])
-    exposed = float(exposed)
+    exposed = round(float(exposed),2)
     
     return exposed
 
