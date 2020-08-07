@@ -35,7 +35,7 @@ const useStyles = (theme) => ({
   cardd: {
     display: "flex",
     justifyContent: "center",
-    marginLeft: "5%",
+    marginLeft: "28%",
     width: "42%",
     marginTop: "50px",
   },
@@ -157,6 +157,18 @@ class App extends React.Component {
               >
                 Default
               </Button>
+
+              <Card className={classes.cardd}>
+                <CardContent>
+                  <Typography
+                    className={classes.title}
+                    variant="h5"
+                    component="h2"
+                  >
+                    {this.state.polyanswer}
+                  </Typography>
+                </CardContent>
+              </Card>
             </>
           ) : null}
           {showFieldSun ? (
@@ -182,8 +194,20 @@ class App extends React.Component {
                 variant="contained"
                 onClick={this.handleSubmitSun}
               >
-                Default
+                Submit
               </Button>
+
+              <Card className={classes.cardd}>
+                <CardContent>
+                  <Typography
+                    className={classes.title}
+                    variant="h5"
+                    component="h2"
+                  >
+                    {this.state.sunAnswer}
+                  </Typography>
+                </CardContent>
+              </Card>
             </>
           ) : null}
 
@@ -191,23 +215,6 @@ class App extends React.Component {
             <h1>{this.state.polyanswer}</h1>
           </div> */}
         </form>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-
-            // maxWidth: 100,
-          }}
-        >
-          <Card className={classes.cardd}>
-            <CardContent>
-              <Typography className={classes.title} variant="h5" component="h2">
-                {this.state.sunAnswer}
-              </Typography>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     );
   }
