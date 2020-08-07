@@ -35,8 +35,9 @@ const useStyles = (theme) => ({
   cardd: {
     display: "flex",
     justifyContent: "center",
-    "margin-left": "5%",
-    width: "90%",
+    marginLeft: "5%",
+    width: "42%",
+    marginTop: "50px",
   },
   title: {
     fontSize: 44,
@@ -156,19 +157,6 @@ class App extends React.Component {
               >
                 Default
               </Button>
-              <div>
-                <Card className={classes.cardd}>
-                  <CardContent>
-                    <Typography
-                      className={classes.title}
-                      variant="h5"
-                      component="h2"
-                    >
-                      {this.state.polyanswer}
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </div>
             </>
           ) : null}
           {showFieldSun ? (
@@ -196,19 +184,6 @@ class App extends React.Component {
               >
                 Default
               </Button>
-              <div>
-                <Card className={classes.cardd}>
-                  <CardContent>
-                    <Typography
-                      className={classes.title}
-                      variant="h5"
-                      component="h2"
-                    >
-                      {this.state.sunAnswer}
-                    </Typography>
-                  </CardContent>
-                </Card>
-              </div>
             </>
           ) : null}
 
@@ -216,7 +191,23 @@ class App extends React.Component {
             <h1>{this.state.polyanswer}</h1>
           </div> */}
         </form>
-        <div></div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+
+            // maxWidth: 100,
+          }}
+        >
+          <Card className={classes.cardd}>
+            <CardContent>
+              <Typography className={classes.title} variant="h5" component="h2">
+                {this.state.sunAnswer}
+              </Typography>
+            </CardContent>
+          </Card>
+        </div>
       </div>
     );
   }
