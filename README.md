@@ -6,3 +6,7 @@ FrontEnd in React , backend in Flask
 Backend - py app.py
 Frontend - npm start
 
+Install Backend Dependencies 
+
+pip install -r requirements.txt
+
