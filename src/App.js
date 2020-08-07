@@ -135,7 +135,7 @@ class App extends React.Component {
           {showFieldPoly ? (
             <TextField
               id="Array"
-              label="Array of Polygon"
+              label="Paste Array of Polygon"
               variant="outlined"
               onChange={this.handleFirstFieldChange}
               value={this.state.polygonArray}
@@ -145,7 +145,7 @@ class App extends React.Component {
             <>
               <TextField
                 id="Point"
-                label="Point to find out"
+                label="Paste Point to find out"
                 variant="outlined"
                 onChange={this.handleSecondFieldChange}
                 value={this.state.point}
@@ -155,7 +155,7 @@ class App extends React.Component {
                 variant="contained"
                 onClick={this.handleSubmitPolygon}
               >
-                Default
+                Submit
               </Button>
 
               <Card className={classes.cardd}>
@@ -174,7 +174,7 @@ class App extends React.Component {
           {showFieldSun ? (
             <TextField
               id="Array"
-              label="Array of Buildings"
+              label="Paste Array of Buildings"
               variant="outlined"
               onChange={this.handleFirstFieldChange}
               value={this.state.polygonArray}
@@ -184,7 +184,7 @@ class App extends React.Component {
             <>
               <TextField
                 id="Sun"
-                label="Coodinate of Sun"
+                label="Paste Coodinate of Sun"
                 variant="outlined"
                 onChange={this.handleSecondFieldChange}
                 value={this.state.point}
